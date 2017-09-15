@@ -38,7 +38,7 @@ nav > .container > ul > li {
 }
 
 #active {
-    border-bottom: 2px solid #53B493;
+    border-bottom: 2px solid #5383b4;
 }
 
 li > a {
@@ -79,6 +79,8 @@ li > a {
     font-weight: 500;
     text-transform: uppercase;
     font-size: 13px;
+    border-top: 1px solid rgba(50,50,50,.09);
+    padding-top: 15px;
 }
 
 .float-right {
@@ -108,11 +110,12 @@ li > a {
 
 #recent-articles > li:hover {
     background-color: #FAFBFD;
+    box-shadow: 0 2px 2px 0 rgba(50,50,50,.09);
 }
 
 .button-default {
     width: 100%;
-    background-color: #53B493;
+    background-color: #5383b4;
     border: 0;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
@@ -126,14 +129,20 @@ li > a {
     font-size: 16px;
     cursor: pointer;
     box-shadow: 0 2px 2px 0 rgba(50,50,50,.09);
+    transition: all .1s linear;
 }
 
 .button-default:hover {
-    background-color: #3f866e;
+    background-color: #3c6086;
+}
+
+.button-default:disabled {
+    cursor: not-allowed;
+    background-color: #86a8ca;
 }
 
 .border-gradient {
-    background-image: linear-gradient(to right, #53B493, #3f866e);
+    background-image: linear-gradient(to right, #5383b4, #3c6086);
     height: 3px;
 }
 
@@ -145,6 +154,7 @@ li > a {
     font-weight: 500;
     cursor: pointer;
     box-shadow: 0 2px 2px 0 rgba(50,50,50,.09);
+    transition: all .15s linear;
 }
 
 .article-showcase:hover {
