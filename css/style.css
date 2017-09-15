@@ -87,7 +87,7 @@ li > a {
 }
 
 .row {
-    width: 73%;
+    width: 72%;
 }
 
 #recent-articles {
@@ -125,14 +125,15 @@ li > a {
     font-family: "Segoe UI";
     font-size: 16px;
     cursor: pointer;
+    box-shadow: 0 2px 2px 0 rgba(50,50,50,.09);
 }
 
 .button-default:hover {
-    background-color: #4ea789;
+    background-color: #3f866e;
 }
 
 .border-gradient {
-    background-image: linear-gradient(to right, #53B493, #4ea789);
+    background-image: linear-gradient(to right, #53B493, #3f866e);
     height: 3px;
 }
 
@@ -142,11 +143,22 @@ li > a {
     border-bottom: 1px solid rgba(50,50,50,.09);
     font-size: 18px;
     font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 2px 2px 0 rgba(50,50,50,.09);
+}
+
+.article-showcase:hover {
+    background-color: #f7f7f7;
 }
 
 .article-showcase:first-child {
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
+}
+
+.article-showcase:last-child {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 .article-showcase > #article-description {
