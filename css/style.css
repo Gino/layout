@@ -2,6 +2,7 @@ body {
     margin: 0 auto;
     font-family: 'Segoe UI';
     background-color: #F2F3F5;
+    color: #2F2F2F;
 }
 
 .container {
@@ -10,7 +11,6 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 500;
     margin: 0;
 }
 
@@ -60,8 +60,97 @@ li > a {
     background-color: #fff;
     padding: 20px;
     border-bottom: 1px solid rgba(50,50,50,.09);
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .panel-heading > #description {
-    color: red;
+    color: #AAAEAF;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.panel-aside {
+    padding: 10px;
+    color: #697582;
+}
+
+.panel-aside > .panel-aside-heading {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.float-right {
+    float: right;
+    width: 25%;
+}
+
+.row {
+    width: 73%;
+}
+
+#recent-articles {
+    list-style-type: none;
+    padding: 0;
+}
+
+#recent-articles > li {
+    padding: 10px;
+    margin-left: -10px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    cursor: pointer;
+    transition: all .1s linear;
+}
+
+#recent-articles > li:hover {
+    background-color: #FAFBFD;
+}
+
+.button-default {
+    width: 100%;
+    background-color: #53B493;
+    border: 0;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    color: #fff;
+    font-weight: 500;
+    font-family: "Segoe UI";
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button-default:hover {
+    background-color: #4ea789;
+}
+
+.border-gradient {
+    background-image: linear-gradient(to right, #53B493, #4ea789);
+    height: 3px;
+}
+
+.article-showcase {
+    background-color: #fff;
+    padding: 20px;
+    border-bottom: 1px solid rgba(50,50,50,.09);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.article-showcase:first-child {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.article-showcase > #article-description {
+    color: #AAAEAF;
+    font-size: 14px;
+    font-weight: normal;
 }
