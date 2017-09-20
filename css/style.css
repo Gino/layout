@@ -1,8 +1,8 @@
 body {
-    margin: 0 auto;
-    font-family: 'Segoe UI';
-    background-color: #F2F3F5;
-    color: #2F2F2F;
+    margin: 0;
+    font-family: 'Segoe UI', 'Open Sans', 'Roboto', sans-serif;
+    color: #444;
+    background-color: #F1F1F1;
 }
 
 .container {
@@ -10,229 +10,124 @@ body {
     margin: 0 auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
+.flex-container {
+    display: flex;
+}
+
+.card {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.075);
+}
+
+#c2 {
+    display: grid;
+    padding-left: 10px;
+}
+
+nav > .container > ul {
+    list-style-type: none;
+    padding: 0;
     margin: 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0,0,0,.075);
+}
+
+nav > .container > ul > li {
+    display: inline;
+    padding-right: 40px;
+    color: #666666;
+    font-weight: 400;
+}
+
+nav > .container > ul > li:hover {
+    color: #444;
 }
 
 nav {
     background-color: #fff;
     padding: 25px;
-    box-shadow: 0 2px 2px 0 rgba(50,50,50,.09);
     margin-bottom: 20px;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.075);
 }
 
-p {
-    margin: 0;
+li > a.active {
+    padding-bottom: 19px;
+    border-bottom: 2px solid #53B493;
+    color: #444;
 }
 
-nav > .container > ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+#topbar {
+    margin-top: 20px;
+    font-size: 20px;
 }
 
-nav > .container > ul > li {
-    display: inline;
-    padding: 20px;
-    padding-bottom: 23px;
-}
-
-#active {
-    border-bottom: 2px solid #6b53b4;
-}
-
-li > a {
+a {
     color: inherit;
     text-decoration: none;
 }
 
-.panel-content {
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 2px 2px 0 rgba(50,50,50,.09);
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
+aside.card {
+    margin-top: 10px;
 }
 
-.panel-heading {
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-    background-color: #fff;
-    padding: 20px;
-    border-bottom: 1px solid rgba(50,50,50,.09);
-    font-size: 18px;
-    font-weight: 500;
+.card-article {
+    float: left;
+    background: #fff;
+    padding: 1rem;
+    margin: 0;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.075);
+    height: 100%;
+    width: 70%;
+    border-bottom: 1px solid rgba(0,0,0,.075);
+    cursor: pointer;
+    transition: all .2s;
 }
 
-.panel-heading > #description {
-    color: #AAAEAF;
-    font-size: 14px;
-    font-weight: normal;
+.card-article:hover {
+    background-color: rgb(249, 249, 249);
 }
 
-.panel-aside {
-    padding: 10px;
-    color: #697582;
-}
-
-.panel-aside > .panel-aside-heading {
-    font-weight: 500;
-    text-transform: uppercase;
-    font-size: 13px;
-    border-top: 1px solid rgba(50,50,50,.09);
-    padding-top: 15px;
-}
-
-.float-right {
-    float: right;
-    width: 25%;
-}
-
-.row {
-    width: 72%;
-}
-
-#recent-articles {
-    list-style-type: none;
+.card-article > .heading {
     padding: 0;
-}
-
-#recent-articles > li {
-    padding: 10px;
-    margin-left: -10px;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    cursor: pointer;
-    transition: all .1s linear;
-}
-
-#recent-articles > li:hover {
-    background-color: #FAFBFD;
-    box-shadow: 0 2px 2px 0 rgba(50,50,50,.09);
-}
-
-.button-default {
-    width: 100%;
-    background-color: #6b53b4;
-    border: 0;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    padding: 10px;
-    margin-bottom: 15px;
-    color: #fff;
+    margin: 0;
+    margin-bottom: 10px;
     font-weight: 500;
-    font-family: "Segoe UI";
-    font-size: 16px;
-    cursor: pointer;
-    box-shadow: 0 2px 2px 0 rgba(50,50,50,.09);
-    transition: all .1s linear;
+    font-size: 17px;
 }
 
-.button-default:hover {
-    background-color: #554094;
-    box-shadow: inset 0 2px 2px 0 rgba(50,50,50,.09);
-}
-
-.button-default:disabled {
-    cursor: not-allowed;
-    background-color: #a89cca;
-}
-
-.border-gradient {
-    background-image: linear-gradient(to right, #6b53b4, #554094);
-    height: 3px;
-}
-
-.article-showcase {
-    background-color: #fff;
-    padding: 20px;
-    border-bottom: 1px solid rgba(50,50,50,.09);
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    box-shadow: 0 2px 2px 0 rgba(50,50,50,.09);
-    transition: all .15s linear;
-}
-
-.article-showcase:hover {
-    background-color: #f7f7f7;
-}
-
-.article-showcase:first-child {
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-}
-
-.article-showcase:last-child {
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-}
-
-.article-showcase > #article-description {
-    color: #AAAEAF;
+.card-article > .description {
+    padding: 0;
+    margin: 0;
     font-size: 14px;
-    font-weight: normal;
+    color: #888;
 }
 
-@media only screen and (max-width: 768px) {
-    .row {
-        width: 100%;
-    }
-
-    .float-right {
-        float: none;
-        width: 100%;
-    }
-
-    .container {
-        width: 95%;
-        margin: 0 auto;
-    }
-
-    .button-default {
-        width: 94%;
-    }
+#first-article {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
 }
 
-@media only screen and (max-width: 450px) {
-    .row {
-        width: 100%;
-    }
-
-    .float-right {
-        float: none;
-        width: 100%;
-    }
-
-    .container {
-        width: 95%;
-        margin: 0 auto;
-    }
-
-    .button-default {
-        width: 94%;
-    }
+#last-article {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
-@media only screen and (max-width: 369px) {
-    nav > .container > ul {
-        font-size: 15px;
-    }
+.button-primary {
+    background-color: #53B493;
+    border: 0;
+    border-radius: 5px;
+    padding: 15px;
+    color: #fff;
+    font-family: 'Segoe UI', 'Open Sans', 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-shadow: 0 1px 2px rgba(0,0,0,.2);
+    cursor: pointer;
+    transition: all .2s;
 }
 
-@media only screen and (max-width: 357px) {
-    nav > .container > ul {
-        font-size: 14px;
-    }
+.button-primary:hover {
+    background-color: rgb(71, 156, 127);
 }
-
-@media only screen and (max-width: 346px) {
-    nav > .container > ul {
-        font-size: 13px;
-    }
-}
-

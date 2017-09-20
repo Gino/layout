@@ -2,61 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Mijn favoriete hobby</title>
+    <title>Nieuwsportaal - Home</title>
     <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width" />
 </head>
 <body>
-    <div class="border-gradient"></div>
-    <nav>
+    <nav class="navbar">
         <div class="container">
             <ul>
-                <li id="active"><a href="#">Home</a></li>
-                <li><a href="#">Mijn hobby</a></li>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">Over mijn hobby</a></li>
                 <li><a href="#">Nieuws</a></li>
             </ul>
+            <section id="topbar">
+                Home
+            </section>
         </div>
     </nav>
     <div class="container">
-        <aside class="float-right panel-aside">
-            <button type="button" class="button-default">Cre&#235;er een artikel</button>
-            <div class="panel-aside-heading">
-                Recente artikelen
-            </div>
-            <ul id="recent-articles">
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Error, nisi iure ratione praesentium?</li>
-                <li>Rem doloribus illum magni molestiae!</li>
-                <li>Blanditiis eligendi rem consequatur amet!</li>
-                <li>Fugit fuga delectus, nulla at.</li>
-            </ul>
-        </aside>
-        <div class="row">
-            <section class="article-showcase">
-                Est perspiciatis corporis cumque aliquid autem. Deserunt, quod.
-                <p id="article-description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, odit.
-                </p>
-            </section>
-            <section class="article-showcase">
-                Velit ad quos neque assumenda, voluptatem itaque nam.
-                <p id="article-description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, odit.
-                </p>
-            </section>
-            <section class="article-showcase">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                <p id="article-description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, odit.
-                </p>
-            </section>
-            <section class="article-showcase">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                <p id="article-description">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, odit.
-                </p>
-            </section>
-
+        <section class="card-article" id="first-article">
+            <p class="heading">Lorem ipsum dolor sit amet.</p>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dicta, error eum id neque sed optio dolorum repudiandae magni vero nam assumenda minima, quidem odit, a officiis similique dolorem rem.</p>
+        </section>
+        <section class="card-article">
+            <p class="heading">Lorem ipsum dolor sit amet.</p>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dicta, error eum id neque sed optio dolorum repudiandae magni vero nam assumenda minima, quidem odit, a officiis similique dolorem rem.</p>
+        </section>
+        <section class="card-article">
+            <p class="heading">Lorem ipsum dolor sit amet.</p>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dicta, error eum id neque sed optio dolorum repudiandae magni vero nam assumenda minima, quidem odit, a officiis similique dolorem rem.</p>
+        </section>
+        <section class="card-article" id="last-article">
+            <p class="heading">Lorem ipsum dolor sit amet.</p>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dicta, error eum id neque sed optio dolorum repudiandae magni vero nam assumenda minima, quidem odit, a officiis similique dolorem rem.</p>
+        </section>
+        <div id="c2">
+            <button type="button" class="button-primary">Create a new article</button>
+            <aside class="card">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, atque? Temporibus laboriosam neque voluptatum repellat, consequatur veniam maxime molestiae dicta alias quaerat aut praesentium architecto, nulla maiores facere nobis voluptates.
+            </aside>
         </div>
     </div>
 </body>
