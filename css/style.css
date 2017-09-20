@@ -3,6 +3,14 @@ body {
     font-family: 'Segoe UI', 'Open Sans', 'Roboto', sans-serif;
     color: #444;
     background-color: #F1F1F1;
+    line-height: 25px;
+}
+
+.border-gradient {
+    background: linear-gradient(to right, #7853b4, #4e3675);
+    height: 2px;
+    width: 100%;
+    position: fixed;
 }
 
 .container {
@@ -53,7 +61,7 @@ nav {
 }
 
 li > a.active {
-    padding-bottom: 19px;
+    padding-bottom: 21px;
     border-bottom: 2px solid #7853b4;
     color: #444;
 }
@@ -81,7 +89,6 @@ aside.card {
     height: 100%;
     width: 70%;
     border-bottom: 1px solid rgba(0,0,0,.075);
-    cursor: pointer;
     transition: all .2s;
 }
 
@@ -107,9 +114,11 @@ aside.card {
 .card > .heading {
     padding: 0;
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-weight: 500;
-    font-size: 16px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0,0,0,.075);
+    font-size: 17px;
 }
 
 .card > .description {
@@ -139,8 +148,117 @@ aside.card {
     font-size: 16px;
     cursor: pointer;
     transition: all .2s;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.075);
 }
 
 .button-primary:hover {
     background-color: #4e3675;
+    transform:translateY(1px);
+}
+
+.button-primary:disabled {
+    background-color: rgba(120, 83, 180, 0.63);
+    cursor: not-allowed;
+}
+
+.button-secondary {
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.17);
+    border-radius: 5px;
+    padding: 10px;
+    color: rgba(0, 0, 0, 0.75);
+    font-family: 'Segoe UI', 'Open Sans', 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.button-secondary:hover {
+    transform:translateY(1px);
+}
+
+.publish {
+    margin-right: 8px;
+    width: 110px;
+}
+
+.cancel {
+    width: 110px;
+}
+
+.button-secondary:disabled {
+    background-color: rgba(120, 83, 180, 0.63);
+    cursor: not-allowed;
+}
+
+.read-more {
+    float: right;
+    color: #666666;
+    font-weight: 500;
+    font-size: 15px;
+    transition: all .2s;
+}
+
+.read-more:hover {
+    color: #444;
+}
+
+#article {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+#article:hover {
+    background-color: #fff;
+}
+
+.heading > .date {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    color: #888;
+    font-weight: normal;
+    float: right;
+}
+
+label {
+    display: block;
+}
+
+input[type=text] {
+    background-color: #fff;
+    color: #444;
+    border: 0;
+    padding: 6px;
+    border-radius: 5px;
+    font-family: 'Segoe UI', 'Open Sans', 'Roboto', sans-serif;
+    border: 1px solid rgba(0, 0, 0, 0.21);
+    width: 20%;
+    font-size: 16px;
+}
+
+textarea {
+    background-color: #F1F1F1;
+    color: #444;
+    border: 0;
+    padding: 6px;
+    border-radius: 5px;
+    font-family: 'Segoe UI', 'Open Sans', 'Roboto', sans-serif;
+    border: 1px solid rgba(0, 0, 0, 0.21);
+    width: 850px;
+    height: 200px;
+    max-width: 99%;
+    max-height: 250px;
+    font-size: 16px;
+}
+
+.label {
+    margin-bottom: 10px;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.card-footer {
 }
