@@ -54,7 +54,7 @@ nav {
 
 li > a.active {
     padding-bottom: 19px;
-    border-bottom: 2px solid #53B493;
+    border-bottom: 2px solid #7853b4;
     color: #444;
 }
 
@@ -104,6 +104,20 @@ aside.card {
     color: #888;
 }
 
+.card > .heading {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.card > .description {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
 #first-article {
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
@@ -115,19 +129,18 @@ aside.card {
 }
 
 .button-primary {
-    background-color: #53B493;
+    background-color: #7853b4;
     border: 0;
     border-radius: 5px;
-    padding: 15px;
+    padding: 10px;
     color: #fff;
     font-family: 'Segoe UI', 'Open Sans', 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
-    text-shadow: 0 1px 2px rgba(0,0,0,.2);
     cursor: pointer;
     transition: all .2s;
 }
 
 .button-primary:hover {
-    background-color: rgb(71, 156, 127);
+    background-color: #4e3675;
 }
