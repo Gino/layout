@@ -7,7 +7,7 @@ body {
 }
 
 .border-gradient {
-    background: linear-gradient(to right, #7853b4, #4e3675);
+    background: linear-gradient(to right, #537bb4, #43628e);
     height: 2px;
     width: 100%;
     position: fixed;
@@ -16,7 +16,7 @@ body {
 .article-img {
     display: block;
     margin-top: 20px;
-    height: 360px;
+    height: initial;
 }
 
 .container {
@@ -68,7 +68,7 @@ nav {
 
 li > a.active {
     padding-bottom: 21px;
-    border-bottom: 2px solid #7853b4;
+    border-bottom: 2px solid #537bb4;
     color: #444;
 }
 
@@ -148,7 +148,7 @@ aside.card {
 }
 
 .button-primary {
-    background-color: #7853b4;
+    background-color: #537bb4;
     border: 0;
     border-radius: 5px;
     padding: 10px;
@@ -163,7 +163,7 @@ aside.card {
 }
 
 .button-primary:hover {
-    background-color: #4e3675;
+    background-color: #43628e;
     transform:translateY(1px);
 }
 
@@ -345,9 +345,17 @@ textarea {
     input[type=text] {
         width: 96%;
     }
+
+    .article-img {
+        height: 225px;
+    }
 }
 
 @media screen and (max-width: 375px) {
+    .article-img {
+        height: 218px;
+    }
+
     .container {
         width: 100%;
     }
@@ -372,6 +380,10 @@ textarea {
 }
 
 @media screen and (max-width: 320px) {
+    .article-img {
+        height: 190px;
+    }
+
     nav > .container > ul {
         font-size: 14px;
     }
