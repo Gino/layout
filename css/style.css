@@ -16,7 +16,7 @@ body {
 .article-img {
     display: block;
     margin-top: 20px;
-    height: initial;
+    width: 75%;
 }
 
 .container {
@@ -317,6 +317,10 @@ textarea {
     input[type=text] {
         width: 75%;
     }
+
+    .article-img {
+        width: 75%;
+    }
 }
 
 @media screen and (max-width: 425px) {
@@ -345,17 +349,9 @@ textarea {
     input[type=text] {
         width: 96%;
     }
-
-    .article-img {
-        height: 225px;
-    }
 }
 
 @media screen and (max-width: 375px) {
-    .article-img {
-        height: 218px;
-    }
-
     .container {
         width: 100%;
     }
@@ -380,10 +376,6 @@ textarea {
 }
 
 @media screen and (max-width: 320px) {
-    .article-img {
-        height: 190px;
-    }
-
     nav > .container > ul {
         font-size: 14px;
     }
