@@ -192,6 +192,7 @@ aside.card {
 }
 
 .publish {
+    display: initial;
     margin-right: 8px;
     width: 110px;
 }
